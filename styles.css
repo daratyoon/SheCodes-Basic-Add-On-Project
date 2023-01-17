@@ -1,0 +1,51 @@
+:root {
+  --button-main-color: rgb(153, 0, 76);
+  --button-dark-theme-color: white;
+}
+
+body {
+  background: rgb(218, 242, 222);
+  text-align: center;
+}
+
+container {
+  margin: 15px auto;
+}
+
+.dark-theme-button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: rgb(153, 0, 76);
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.dark-theme-button:hover {
+  background-color: var(--button-dark-theme-color);
+  color: var(--button-main-color);
+  border: white;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.intro-photo {
+  transition: all 0.5 150ms ease-in-out;
+  width: 600px;
+}
+
+.intro-photo:hover {
+  opacity: 0.9;
+  transform: scale(2);
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.image-gallery img {
+  width: 100%;
+}
