@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Film/Analog Photograph</title>
+    <title>🎞️ Film/Analog Photography</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <button class="theme-button">Change Theme</button>
     <div class="container">
-      <button class="dark-theme-button">Dark Theme</button>
       <h1>Film/Analog Photography</h1>
-      <h2>Introduction</h2>
+      <h2>What is Film Photograpy?</h2>
       <p>
         The term ‘Analogue Photography’ refers to photography using an analogue
         camera and film. A roll of film is loaded into the camera and the magic
@@ -20,46 +26,87 @@
         roll come to life when the film is processed in a photo lab.
         <br />
         Some cameras use 35mm film, some require 110 format film, some shoot 120
-        (aka ‘medium-format’) film and some use Instant film; the most common
+        (aka ‘medium-format’) film and some use Instant film...the most common
         among these choices is 35mm film.
       </p>
 
       <h3>Gallery</h3>
 
       <img
-        src="/media/film-photo-1.jpg"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/475/original/film-photo-1.jpg?1674087291"
         alt="Film Photographs"
         class="intro-photo"
       />
       <div class="image-gallery">
-        <img src="/media/film-photo-2.jpg" alt="Film Photographs" />
-        <img src="/media/film-photo-3.jpg" alt="Film Photographs" />
-        <img src="/media/film-photo-4.jpg" alt="Film Photographs" />
-        <img src="/media/film-photo-5.jpg" alt="Film Photographs" />
-        <img src="/media/film-photo-6.jpg" alt="Film Photographs" />
-        <img src="/media/film-photo-7.jpg" alt="Film Photographs" />
-        <img src="/media/film-photo-8.jpg" alt="Film Photographs" />
-        <img src="/media/film-photo-9.jpg" alt="Film Photographs" />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/476/original/film-photo-2.jpg?1674087299"
+          alt="Film Photographs"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/477/original/film-photo-3.jpg?1674087307"
+          alt="Film Photographs"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/478/original/film-photo-4.jpg?1674087542"
+          alt="Film Photographs"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/479/original/film-photo-5.jpg?1674087549"
+          alt="Film Photographs"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/480/original/film-photo-6.jpg?1674087809"
+          alt="Film Photographs"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/484/original/film-photo-7.jpg?1674088015"
+          alt="Film Photographs"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/485/original/film-photo-8.jpg?1674088023"
+          alt="Film Photographs"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/486/original/film-photo-9.jpg?1674088029"
+          alt="Film Photographs"
+        />
       </div>
 
-      <div class="source-link">
+      <div>
         <a
           href="https://microsites.lomography.com/analogue-photography-101/"
           target="_blank"
+          class="source-link"
         >
           Read More About Film Photography</a
         >
       </div>
-
-      <footer>
-        This page was coded by
-        <a
-          href="https://glittery-salmiakki-e4c520.netlify.app/"
-          alt="Link to Portfolio"
-          target="_blank"
-          >Sandra Tsai-Yun</a
-        >
-      </footer>
     </div>
+    <footer>
+      This page was coded by
+      <a
+        href="https://glittery-salmiakki-e4c520.netlify.app/"
+        alt="Link to Portfolio"
+        target="_blank"
+        >Sandra Tsai-Yun</a
+      >
+      <div class="photo-credit">
+        Photographs taken by Sandra with 35mm film ✌🏻
+      </div>
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let button = document.querySelector(".theme-button");
+      button.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
